@@ -17,7 +17,7 @@ bool isDragging = false;
 const double GRAVITY = 0.5;
 const double DAMPING = 0.996;
 
-//Graph contants
+//Graph constants
 const int GRAPH_HEIGHT = 200;
 const int GRAPH_WIDTH = 400;
 std::vector<double> angleHistory;
@@ -71,7 +71,7 @@ bool SDLINIT(){
 }
 
 void manageTracePath() {
-    // Remove oldest point if path is full or acceleration is zero
+    // Remove oldest point if the path is full or acceleration is zero
     if (trace_path_container.size() >= PATH_LENGTH || 
         pendulum.ang_velocity == 0) {
         delete trace_path_container.front();
@@ -84,12 +84,12 @@ void manageTracePath() {
         int x = pendulum.getBobX();
         int y = pendulum.getBobY();
 
-        // Generate color based on coordinates
+        // Generate colour based on coordinates
         short red = static_cast<short>((x*10 % 255 + y % 255));
         short green = static_cast<short>((x * y) % 255);
         short blue = static_cast<short>((x + y) % 255);
 
-        // Create and add new path point
+        // Create and add a new path point
         PathPoint* newPoint = new PathPoint(x, y, red, green, blue);
         trace_path_container.push_back(newPoint);
     }
@@ -187,7 +187,7 @@ void energyGraph(){
         maxKinetic = kinetic[i];
       }
   }
-  //POTENTIAL ENEGRY
+  //POTENTIAL ENERGY
   SDL_SetRenderDrawColor(renderer, 50,255, 50, 255);
   for (size_t i = 1; i < potential.size(); ++i) {
       int x1 = SCREEN_WIDTH - GRAPH_WIDTH + 40 + i - 1;
