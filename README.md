@@ -95,7 +95,7 @@ This project is licensed under the MIT License.
 If you have any questions or suggestions, feel free to reach out or open an issue.
 
 ## Demo Video
-Check out the project demo video on YouTube: [Demo Video Link]
+Check out the project demo video on YouTube: https://www.youtube.com/watch?v=McOcbGHyAWA
 
 Thank you for exploring this project! Consider starring the repository if you found it helpful.
 
