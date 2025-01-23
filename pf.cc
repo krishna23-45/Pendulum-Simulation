@@ -346,10 +346,18 @@ void RenderScreen(){
   //calling the render handler
   SDL_RenderPresent(renderer);
 }
+void cleanupTracePath() {
+    for (auto point : trace_path_container) {
+        delete point;
+    }
+    trace_path_container.clear();
+}
 
 void DestroyScreen(){
+  cleanupTracePath();
   SDL_DestroyRenderer(renderer);
   SDL_DestroyWindow(window);
+  TTF_Quit();  
   SDL_Quit();
 }
 
