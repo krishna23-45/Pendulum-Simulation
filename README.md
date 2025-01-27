@@ -29,7 +29,7 @@ Ensure you have the following installed:
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone 
+   git clone git@github.com:krishna23-45/Pendulum-Simulation.git
    ```
 ## Building
 
@@ -47,7 +47,11 @@ This project uses `make` for building. To build the project, run the following c
    ```bash
    ./pendulum_simulation
    ```
-5. To clean up the build artifacts
+5. In Window:
+   ```bash
+   main.exe
+   ```
+6. To clean up the build artifacts
    ```bash
     make clean
    ```
@@ -97,5 +101,5 @@ If you have any questions or suggestions, feel free to reach out or open an issu
 ## Demo Video
 Check out the project demo video on YouTube: https://www.youtube.com/watch?v=McOcbGHyAWA
 
-Thank you for exploring this project! Consider starring the repository if you found it helpful.
+
 
